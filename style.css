@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: #05051d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDisplay {
+    width: 290px;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+    background-color: #beb9b9;
+    border-radius: 10px;
+}
+
+.containerDisplay .display {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: #beb9b9;
+    font-size: 30px;
+    color: #1f1d1d;
+    text-align: right;
+    margin: 0;
+    height: 90%;
+    padding-right: 10px;
+    border-radius: 10px; 
+}
+
+.containerTolls {    
+    height: 95vh;
+    width:320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px 15px;
+    background-image: radial-gradient(circle at 29.39% 106.63%,  #ff6600 0, #ff9900 8.33%, #ff9600 16.67%, #ff821b 25%, #ff6c2c 33.33%, #ff5536 41.67%, #f23c3c 50%, #db213f 58.33%, #c70043 66.67%, #b40046 75%, #a30049 83.33%, #95004e 91.67%, #880054 100%);
+}
+
+.containerTeclas {
+    background-image: radial-gradient(circle at 29.39% 106.63%, #ffb800 0, #ffa800 8.33%, #ff9600 16.67%, #ff821b 25%, #ff6c2c 33.33%, #ff5536 41.67%, #f23c3c 50%, #db213f 58.33%, #c70043 66.67%, #b40046 75%, #a30049 83.33%, #95004e 91.67%, #880054 100%);
+    height: 60vh;
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    padding: 10px 10px 15px 10px ;
+    
+}
+
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #131212;
+    text-shadow: 2px 3px #636060;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 1.5px #e683dd; 
+    border-radius: 6px;
+    margin:  5px 5px ;
+    width: 20%;
+    height: 10%;
+}
+
+.numero {
+    background-image: radial-gradient(circle at 29.39% 106.63%, #d374c6 0,#d35bc3 8.34%,#df46b1 16.6%,#b62f94 25%,#9c3e85 38%,#cf26c1 48.8%,#ad288c 55.5%, #b00fbe 69%,#ac159f 76.5%,#972288 86.7%,#921b74 92.4%,#bd1192 100%);
+}
+
+.operador {
+    background-image: radial-gradient(circle at 29.39% 106.63%, #97d374 0,#8dd365 8.34%,#73b64c 16.6%,#589b31 25%,#43831e 38%,#438b18 48.8%,#399713 55.5%, #359211 69%,#348b11.5%,#37a30c 86.7%,#3cad0f 92.4%,#3db80c 100%);    
+}
+
+.reset {
+    width: 45%;
+    height: 10%;
+    margin: 0 5px 0;
+    background-image: radial-gradient(circle at 29.39% 106.63%, #d687a1 0,#ca7390 8.34%,#c05a7c 16.6%,#bb436b 25%,#b83661 38%,#c73163 48.8%,#ca265d 55.5%, #d31d59  69%,#d3225d 55.5%,#c9275d  86.7%,#d6215d  92.4%,#e02463  100%);
+    box-shadow: 2px 1.5px #da87ba; 
+}
+
+.del {
+    background-image: radial-gradient(circle at 29.39% 106.63%,#e4b56e 0,#9998cc 8.34%,#8887ca 16.6%,#716fc0 25%,#605fbd 38%,#4644a7 48.8%,#3836ac 55.5%, #3533c2 69%,#302dd4 55.5%,#2421e2  86.7%,#2723e9 92.4%,#1c18ee  100%);
+    height: 10%;
+    width:25%;
+    box-shadow: 2px 1.5px #9987da; 
+}
+
+@media(min-width:900px) {
+
+    .containerTolls {
+        width: 450px;
+    }
+
+    .containerTeclas {
+        width:395px;
+    }
+
+    .containerDisplay {
+        width:395px;
+        height: 130px;
+    }
+
+    .containerDisplay .display {
+        font-size: 40px;
+    }
+
+    .numero {
+        font-size: 30px;
+        font-weight:900;
+    }
+
+    .operador {
+        font-size: 30px;
+        font-weight:900;
+    }
+
+    .reset {
+        font-size: 25px;
+        font-weight:900;
+    }
+
+    .del {
+        font-size: 25px;
+        font-weight:900;
+    }
+
+}
+
+@media(min-width:1040px) {
+
+    .containerTolls {
+        width: 560px;
+    }
+
+    .containerTeclas {
+        width:486px;
+    }
+
+    .containerDisplay {
+        width:490px;
+        height: 170px;
+    }
+    
+    .containerDisplay .display {
+        font-size: 50px;
+    }
+
+}
